@@ -32,8 +32,10 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 ## Papers
 ### 2020
 - <a name="todo"></a> Semantic Drift Compensation for Class-Incremental Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00440.pdf)] [[code](https://github.com/yulu0724/SDC-IL)]
+
 先维护每类在embedding space中的mean（类中心）：当前任务的样本在训练前后会产生drift，用这些drift来计算每类中心点的drift。
 分类是用NME做，loss 是triplet loss. 补充材料里使用了angular loss.
+
 - <a name="todo"></a> Few-Shot Class-Incremental Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.10956.pdf)]
 - <a name="todo"></a> Conditional Channel Gated Networks for Task-Aware Continual Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00070.pdf)]
 - <a name="todo"></a> Continual Learning with Extended Kronecker-factored Approximate Curvature
