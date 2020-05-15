@@ -37,6 +37,11 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 分类是用NME做，loss 是triplet loss. 补充材料里使用了angular loss.
 
 - <a name="todo"></a> Few-Shot Class-Incremental Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.10956.pdf)]
+
+用neural gas模型对feature space 建模，两个loss，第一个为了防止遗忘：neural gas中的点不能变化太多，这个loss考虑到了维度里面的方差。
+第二个loss为了避免过拟合新任务：代表新类的anchor远离原有的点，靠近新类的sample。
+neural gas在base时使用固定数量的anchor，之后新任务每次增加若干anchor.
+
 - <a name="todo"></a> Conditional Channel Gated Networks for Task-Aware Continual Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00070.pdf)]
 - <a name="todo"></a> Continual Learning with Extended Kronecker-factored Approximate Curvature
  (**CVPR2020**) [[paper](https://arxiv.org/abs/2004.07507)]
