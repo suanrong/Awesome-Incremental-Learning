@@ -43,6 +43,9 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 neural gas在base时使用固定数量的anchor，之后新任务每次增加若干anchor.
 
 - <a name="todo"></a> Conditional Channel Gated Networks for Task-Aware Continual Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00070.pdf)]
+
+对于每个task，通过门结构选择来激活或不激活conv的某些channel（有点像attention）, 激活过的在之后任务中被freeze。模型包含task-classifier来确定task ID，使用了令网络稀疏的loss（使激活的通道尽量少），
+
 - <a name="todo"></a> Continual Learning with Extended Kronecker-factored Approximate Curvature
  (**CVPR2020**) [[paper](https://arxiv.org/abs/2004.07507)]
 - <a name="todo"></a> iTAML : An Incremental Task-Agnostic Meta-learning Approach (**CVPR2020**) [[paper](https://arxiv.org/pdf/2003.11652.pdf)] [[code](https://github.com/brjathu/iTAML)]
