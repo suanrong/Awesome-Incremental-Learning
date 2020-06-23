@@ -50,6 +50,11 @@ neural gas在base时使用固定数量的anchor，之后新任务每次增加若
  (**CVPR2020**) [[paper](https://arxiv.org/abs/2004.07507)]
 - <a name="todo"></a> iTAML : An Incremental Task-Agnostic Meta-learning Approach (**CVPR2020**) [[paper](https://arxiv.org/pdf/2003.11652.pdf)] [[code](https://github.com/brjathu/iTAML)]
 - <a name="todo"></a> Mnemonics Training: Multi-Class Incremental Learning without Forgetting (**CVPR2020**) [[paper](https://arxiv.org/pdf/2002.10211.pdf)] [[code](https://github.com/yaoyao-liu/mnemonics)]
+
+对于某个任务，如果在exemplars上训练得到的模型和在此任务的所有数据上训练得到的模型的结果一致，那这些exemplars就是好的exemplars。论文基于这样的目的，把exemplars当成参数，优化之，目标是在此任务的所有数据上表现好。
+
+额外的：weight transfer， fine-tune on exemplars， old emeplars adjustment（用上述思想，存疑）
+
 - <a name="todo"></a> Accepted papers(**ICLR2020**) [[paper](https://docs.google.com/presentation/d/17s5Y8N9dypH-59tuwKaCp80NYBxTmtT6V-zOFlsH-SA/edit?usp=sharing)]
 ### 2019
 - <a name="todo"></a> Compacting, Picking and Growing for Unforgetting Continual Learning (**NeurIPS2019**)[[paper](https://papers.nips.cc/paper/9518-compacting-picking-and-growing-for-unforgetting-continual-learning.pdf)][[code](https://github.com/ivclab/CPG)]
