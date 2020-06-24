@@ -49,9 +49,14 @@ neural gas在base时使用固定数量的anchor，之后新任务每次增加若
 - <a name="todo"></a> Continual Learning with Extended Kronecker-factored Approximate Curvature
  (**CVPR2020**) [[paper](https://arxiv.org/abs/2004.07507)]
 - <a name="todo"></a> iTAML : An Incremental Task-Agnostic Meta-learning Approach (**CVPR2020**) [[paper](https://arxiv.org/pdf/2003.11652.pdf)] [[code](https://github.com/brjathu/iTAML)]
+
+和maml的思路很像。有exemplars。在训练过程中，让模型分别对每个任务i进行更新，得到若干临时模型（feature extractor + classifier_i）。临时模型与原模型的差值作为梯度，来更新原模型。推断时先判断是哪个任务，然后用相关的exemplar做fine-tune，再进行预测。
+
+效果特别好，诧异。
+
 - <a name="todo"></a> Mnemonics Training: Multi-Class Incremental Learning without Forgetting (**CVPR2020**) [[paper](https://arxiv.org/pdf/2002.10211.pdf)] [[code](https://github.com/yaoyao-liu/mnemonics)]
 
-对于某个任务，如果在exemplars上训练得到的模型和在此任务的所有数据上训练得到的模型的结果一致，那这些exemplars就是好的exemplars。论文基于这样的目的，把exemplars当成参数，优化之，目标是在此任务的所有数据上表现好。
+对于某个任务，如果在exemplars上训练得到的模型和在此任务的所有数据上训练得到的模型的结果一致，那这些exemplars就是好的exemplars。论文基于这样的目的，把exemplars当成参数，优化之，目标是在此任务的所有数据上表现好。像maml。
 
 额外的：weight transfer， fine-tune on exemplars， old emeplars adjustment（用上述思想，存疑）
 
