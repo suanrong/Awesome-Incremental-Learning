@@ -1,24 +1,17 @@
 # Awesome Incremental Learning / Lifelong learning
-
 ## Feel free to contact me if you find any interesting paper is missing.
 
-## ContinualAI wiki
+## [Awesome Long-Tailed Recognition / Imbalanced Learning](https://github.com/xialeiliu/Awesome-LongTailed-Recognition)
+#### Find it interesting that there are more shared techniques than I thought for incremental learning (exemplars-based). 
 
+## ContinualAI wiki
 #### [An Open Community of Researchers and Enthusiasts on Continual/Lifelong Learning for AI](https://www.continualai.org/)
 
 ## Workshops
-
-#### [Continual learning workshop NeurIPS 2018](https://sites.google.com/view/continual2018/home?authuser=0)
-
 #### [4th Lifelong Learning Workshop at ICML 2020](https://lifelongml.github.io/)
-
+#### [Workshop on Continual Learning at ICML 2020](https://icml.cc/Conferences/2020/Schedule?showEvent=5743)
 #### [Continual Learning in Computer Vision Workshop CVPR 2020](https://sites.google.com/view/clvision2020/overview)
-
-
-## single-head v.s. multi-head; w exemplars or w/o exemplars
-
-Being aware of different training and test settings.
-
+#### [Continual learning workshop NeurIPS 2018](https://sites.google.com/view/continual2018/home?authuser=0)
 
 ## Challenges or Competitions
 #### [Lifelong Robotic Vision Challenge IROS 2019](https://lifelong-robotic-vision.github.io)
@@ -31,6 +24,10 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
  (**arXiv 2018**) [[paper](https://arxiv.org/abs/1802.07569)]
 ## Papers
 ### 2020
+- <a name="todo"></a> XtarNet: Learning to Extract Task-Adaptive Representation
+for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/2003.08561.pdf)]
+- <a name="todo"></a> Optimal Continual Learning has Perfect Memory and is NP-HARD (**ICML2020**) [[paper](https://arxiv.org/pdf/2006.05188.pdf)]
+- <a name="todo"></a> Neural Topic Modeling with Continual Lifelong Learning (**ICML2020**) [[paper](https://arxiv.org/pdf/2006.10909.pdf)]
 - <a name="todo"></a> Semantic Drift Compensation for Class-Incremental Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00440.pdf)] [[code](https://github.com/yulu0724/SDC-IL)]
 
 先维护每类在embedding space中的mean（类中心）：当前任务的样本在训练前后会产生drift，用这些drift来计算每类中心点的drift。
