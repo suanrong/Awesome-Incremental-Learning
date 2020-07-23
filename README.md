@@ -27,6 +27,12 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 - <a name="todo"></a> XtarNet: Learning to Extract Task-Adaptive Representation
 for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/2003.08561.pdf)]
 - <a name="todo"></a> Optimal Continual Learning has Perfect Memory and is NP-HARD (**ICML2020**) [[paper](https://arxiv.org/pdf/2006.05188.pdf)]
+
+每个任务的最优参数空间是一个集合，那么持续学习就是在找这些集合的交里的的某个元素。
+在参数空间里判断集合是否有交是np-complete，所以最优持续学习是np-hard的。
+
+最优的持续学习需要perfect memory：新任务的最优参数空间是未知的，为了与新任务的参数空间求交，要知道到现在为止，最优的参数空间的交的集合，而不是集合的某个元素（当前模型的参数）。
+
 - <a name="todo"></a> Neural Topic Modeling with Continual Lifelong Learning (**ICML2020**) [[paper](https://arxiv.org/pdf/2006.10909.pdf)]
 - <a name="todo"></a> Semantic Drift Compensation for Class-Incremental Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00440.pdf)] [[code](https://github.com/yulu0724/SDC-IL)]
 
