@@ -25,6 +25,9 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 ## Papers
 ### 2020
 - <a name="todo"></a> Adversarial Continual Learning (**ECCV2020**) [[paper](https://arxiv.org/abs/2003.09553)]  [[code](https://github.com/facebookresearch/Adversarial-Continual-Learning)]
+
+属于task_id aware的模型, 用对抗学习的方法分离feature中task-invariant和task-specific中的部分.
+
 - <a name="todo"></a> Incremental Meta-Learning via Indirect Discriminant Alignment (**ECCV2020**) [[paper](https://arxiv.org/abs/2002.04162)]
 - <a name="todo"></a> Memory-Efficient Incremental Learning Through Feature Adaptation (**ECCV2020**) [[paper](https://arxiv.org/abs/2004.00713)]
 - <a name="todo"></a> Small-Task Incremental Learning (**ECCV2020**) [[paper](https://arxiv.org/abs/2004.13513)]
