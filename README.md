@@ -128,7 +128,7 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
 - <a name="todo"></a> DeeSIL: Deep-Shallow Incremental Learning (**ECCV2018**) [[paper](https://arxiv.org/pdf/1808.06396.pdf)] 
 - <a name="todo"></a> End-to-End Incremental Learning (**ECCV2018**) [[paper](https://arxiv.org/abs/1807.09536)][[code](https://github.com/fmcp/EndToEndIncrementalLearning)]
 
-和icarl很像，区别在于icarl训练时把旧类别的label替换为old model的输出，然后计算分类loss。这篇直接把分类loss和蒸馏loss分别计算了。同时还加了数据增强和gradient noise。同时，在训练完一个任务后，使用了balance的dataset进行fine-tune，fine-tune过程也使用了分类loss和蒸馏loss。
+和icarl很像，区别在于icarl训练时把旧类别的label替换为old model的输出，然后计算分类loss。这篇直接把分类loss和蒸馏loss分别计算了。同时还加了数据增强和gradient noise。同时，在训练完一个任务后，使用了balance的dataset进行fine-tune，fine-tune过程也使用了分类loss和蒸馏loss。根据它的ablation study, 没有数据增强和balance fine-tune的话，它的效果并不如icarl.
 
 - <a name="todo"></a> Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence (**ECCV2018**)[[paper](http://arxiv-export-lb.library.cornell.edu/abs/1801.10112)] 
 - <a name="todo"></a> Piggyback: Adapting a Single Network to Multiple Tasks by Learning to Mask Weights (**ECCV2018**) [[paper](https://arxiv.org/abs/1801.06519)] [[code](https://github.com/arunmallya/piggyback)]
