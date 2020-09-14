@@ -33,6 +33,9 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 属于task_id aware的模型, 用对抗学习的方法分离feature中task-invariant和task-specific中的部分.
 
 - <a name="todo"></a> Incremental Meta-Learning via Indirect Discriminant Alignment (**ECCV2020**) [[paper](https://arxiv.org/abs/2002.04162)]
+
+论文做的是incremental的meta learning。训练incremental的meta数据时，让新类样本的特征在过旧类分类器后，能得到和之前相似的输出（公式6）。
+
 - <a name="todo"></a> Memory-Efficient Incremental Learning Through Feature Adaptation (**ECCV2020**) [[paper](https://arxiv.org/abs/2004.00713)]
 - <a name="todo"></a> Small-Task Incremental Learning (**ECCV2020**) [[paper](https://arxiv.org/abs/2004.13513)]
 - <a name="todo"></a> Reparameterizing Convolutions for Incremental Multi-Task Learning Without Task Interference (**ECCV2020**) [[paper](https://arxiv.org/abs/2007.12540)]
