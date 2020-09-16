@@ -24,7 +24,7 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
  (**arXiv 2018**) [[paper](https://arxiv.org/abs/1802.07569)]
 ## Papers
 ### 2020
-- <a name="todo"></a> Adversarial Continual Learning (**ECCV2020**) [[paper](file:///C:/Users/admin/OneDrive/paper/Continual%20Learning/Adversarial%20Continual%20Learning%20ECCV'20.pdf)]  [[code](https://github.com/facebookresearch/Adversarial-Continual-Learning)]
+- <a name="todo"></a> Adversarial Continual Learning (**ECCV2020**) [[paper](C:/Users/admin/OneDrive/paper/Continual%20Learning/Adversarial%20Continual%20Learning%20ECCV'20.pdf)]  [[code](https://github.com/facebookresearch/Adversarial-Continual-Learning)]
 
 属于task_id aware的模型, 用对抗学习的方法分离feature中task-invariant和task-specific中的部分.
 
