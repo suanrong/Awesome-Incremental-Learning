@@ -49,6 +49,9 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 - <a name="todo"></a> Online Continual Learning under Extreme Memory Constraints	(**ECCV2020**) [[paper](https://arxiv.org/abs/2008.01510)]
 - <a name="todo"></a> Class-Incremental Domain Adaptation (**ECCV2020**) [[paper](https://arxiv.org/abs/2008.01389)]
 - <a name="todo"></a> More Classifiers, Less Forgetting: A Generic Multi-classifier Paradigm for Incremental Learning (**ECCV2020**) [[paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123710698.pdf)]
+
+    在训练完一个任务后，又另外对多个新的边缘分类层进行训练（加入无监督的一些样本，同时这些分类层的输出要尽可能不一样）。在之后的任务中，这些层的输出会成为regularization loss的一部分.
+
 - <a name="todo"></a> Piggyback GAN: Efficient Lifelong Learning for Image Conditioned Generation (**ECCV2020**) [[paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660392.pdf)]
 - <a name="todo"></a> GDumb: A Simple Approach that Questions Our Progress in Continual Learning	 (**ECCV2020**) [[paper](http://www.robots.ox.ac.uk/~tvg/publications/2020/gdumb.pdf)]
 
