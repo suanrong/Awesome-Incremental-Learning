@@ -30,19 +30,19 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 
 - <a name="todo"></a> REMIND Your Neural Network to Prevent Catastrophic Forgetting (**ECCV2020**) [[paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123530460.pdf)]  [[code](https://github.com/tyler-hayes/REMIND)]
 
-论文把nn分成两部分，前一部分frozen，后一部分可训练。exemplar不再是原始图片，而是前一部分的输出。另外还使用了tensor quantization来得到提高memory的储存效率。
+    论文把nn分成两部分，前一部分frozen，后一部分可训练。exemplar不再是原始图片，而是前一部分的输出。另外还使用了tensor quantization来得到提高memory的储存效率。
 
 - <a name="todo"></a> Incremental Meta-Learning via Indirect Discriminant Alignment (**ECCV2020**) [[paper](https://arxiv.org/abs/2002.04162)]
 
-论文做的是incremental的meta learning。训练incremental的meta数据时，让新类样本的特征在过旧类分类器后，能得到和之前相似的输出（公式6）。
+    论文做的是incremental的meta learning。训练incremental的meta数据时，让新类样本的特征在过旧类分类器后，能得到和之前相似的输出（公式6）。
 
 - <a name="todo"></a> Memory-Efficient Incremental Learning Through Feature Adaptation (**ECCV2020**) [[paper](https://arxiv.org/abs/2004.00713)]
 
-论文使用了一个feature adaptation网络来解决任务切换导致的feature space不同的问题。
+    论文使用了一个feature adaptation网络来解决任务切换导致的feature space不同的问题。
 
 - <a name="todo"></a> PODNet: Pooled Outputs Distillation for Small-Tasks Incremental Learning (**ECCV2020**) [[paper](https://arxiv.org/abs/2004.13513)] [[code](https://github.com/arthurdouillard/incremental_learning.pytorch)]
 
-分类时，对于每一类，用多个w和样本特征的距离来计算分类logit。 loss 是在CNN中间层加pooling后的Distillation约束 ， embedding层的Distillation约束。
+    分类时，对于每一类，用多个w和样本特征的距离来计算分类logit。 loss 是在CNN中间层加pooling后的Distillation约束 ， embedding层的Distillation约束。
 
 - <a name="todo"></a> Reparameterizing Convolutions for Incremental Multi-Task Learning Without Task Interference (**ECCV2020**) [[paper](https://arxiv.org/abs/2007.12540)]
 - <a name="todo"></a> Learning latent representions across multiple data domains using Lifelong VAEGAN (**ECCV2020**) [[paper](https://arxiv.org/abs/2007.10221)]
@@ -52,7 +52,7 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 - <a name="todo"></a> Piggyback GAN: Efficient Lifelong Learning for Image Conditioned Generation (**ECCV2020**) [[paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660392.pdf)]
 - <a name="todo"></a> GDumb: A Simple Approach that Questions Our Progress in Continual Learning	 (**ECCV2020**) [[paper](http://www.robots.ox.ac.uk/~tvg/publications/2020/gdumb.pdf)]
 
-直接选exemplars, 只基于exemplars训练，然后测试。
+    直接选exemplars, 只基于exemplars训练，然后测试。
 
 - <a name="todo"></a> Imbalanced Continual Learning with Partitioning Reservoir Sampling	 (**ECCV2020**) [[paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580409.pdf)]
 - <a name="todo"></a> Topology-Preserving Class-Incremental Learning (**ECCV2020**) [[paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123640256.pdf)]
@@ -61,40 +61,31 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/2003.08561.pdf)]
 - <a name="todo"></a> Optimal Continual Learning has Perfect Memory and is NP-HARD (**ICML2020**) [[paper](https://arxiv.org/pdf/2006.05188.pdf)]
 
-每个任务的最优参数空间是一个集合，那么持续学习就是在找这些集合的交里的的某个元素。
-在参数空间里判断集合是否有交是np-complete，所以最优持续学习是np-hard的。
-
-最优的持续学习需要perfect memory：新任务的最优参数空间是未知的，为了与新任务的参数空间求交，要知道到现在为止，最优的参数空间的交的集合，而不是集合的某个元素（当前模型的参数）。
+    每个任务的最优参数空间是一个集合，那么持续学习就是在找这些集合的交里的的某个元素。在参数空间里判断集合是否有交是np-complete，所以最优持续学习是np-hard的。最优的持续学习需要perfect memory：新任务的最优参数空间是未知的，为了与新任务的参数空间求交，要知道到现在为止，最优的参数空间的交的集合，而不是集合的某个元素（当前模型的参数）。
 
 - <a name="todo"></a> Neural Topic Modeling with Continual Lifelong Learning (**ICML2020**) [[paper](https://arxiv.org/pdf/2006.10909.pdf)]
 - <a name="todo"></a> Semantic Drift Compensation for Class-Incremental Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00440.pdf)] [[code](https://github.com/yulu0724/SDC-IL)]
 
-先维护每类在embedding space中的mean（类中心）：当前任务的样本在训练前后会产生drift，用这些drift来计算每类中心点的drift。
+    先维护每类在embedding space中的mean（类中心）：当前任务的样本在训练前后会产生drift，用这些drift来计算每类中心点的drift。
 分类是用NME做，loss 是triplet loss. 补充材料里使用了angular loss.
 
 - <a name="todo"></a> Few-Shot Class-Incremental Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.10956.pdf)]
 
-用neural gas模型对feature space 建模，两个loss，第一个为了防止遗忘：neural gas中的点不能变化太多，这个loss考虑到了维度里面的方差。
-第二个loss为了避免过拟合新任务：代表新类的anchor远离原有的点，靠近新类的sample。
-neural gas在base时使用固定数量的anchor，之后新任务每次增加若干anchor.
+    用neural gas模型对feature space 建模，两个loss，第一个为了防止遗忘：neural gas中的点不能变化太多，这个loss考虑到了维度里面的方差。第二个loss为了避免过拟合新任务：代表新类的anchor远离原有的点，靠近新类的sample。neural gas在base时使用固定数量的anchor，之后新任务每次增加若干anchor.
 
 - <a name="todo"></a> Conditional Channel Gated Networks for Task-Aware Continual Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00070.pdf)]
 
-对于每个task，通过门结构选择来激活或不激活conv的某些channel（有点像attention）, 激活过的在之后任务中被freeze。模型包含task-classifier来确定task ID，使用了令网络稀疏的loss（使激活的通道尽量少），
+    对于每个task，通过门结构选择来激活或不激活conv的某些channel（有点像attention）, 激活过的在之后任务中被freeze。模型包含task-classifier来确定task ID，使用了令网络稀疏的loss（使激活的通道尽量少），
 
 - <a name="todo"></a> Continual Learning with Extended Kronecker-factored Approximate Curvature
  (**CVPR2020**) [[paper](https://arxiv.org/abs/2004.07507)]
 - <a name="todo"></a> iTAML : An Incremental Task-Agnostic Meta-learning Approach (**CVPR2020**) [[paper](https://arxiv.org/pdf/2003.11652.pdf)] [[code](https://github.com/brjathu/iTAML)]
 
-和maml的思路很像。有exemplars。在训练过程中，让模型分别对每个任务i进行更新，得到若干临时模型（feature extractor + classifier_i）。临时模型与原模型的差值作为梯度，来更新原模型。推断时先判断是哪个任务，然后用相关的exemplar做fine-tune，再进行预测。
-
-效果特别好，诧异。
+    和maml的思路很像。有exemplars。在训练过程中，让模型分别对每个任务i进行更新，得到若干临时模型（feature extractor + classifier_i）。临时模型与原模型的差值作为梯度，来更新原模型。推断时先判断是哪个任务，然后用相关的exemplar做fine-tune，再进行预测。效果特别好，诧异。
 
 - <a name="todo"></a> Mnemonics Training: Multi-Class Incremental Learning without Forgetting (**CVPR2020**) [[paper](https://arxiv.org/pdf/2002.10211.pdf)] [[code](https://github.com/yaoyao-liu/mnemonics)]
 
-对于某个任务，如果在exemplars上训练得到的模型和在此任务的所有数据上训练得到的模型的结果一致，那这些exemplars就是好的exemplars。论文基于这样的目的，把exemplars当成参数，优化之，目标是在此任务的所有数据上表现好。像maml。
-
-额外的：weight transfer， fine-tune on exemplars， old emeplars adjustment（用上述思想，存疑）
+    对于某个任务，如果在exemplars上训练得到的模型和在此任务的所有数据上训练得到的模型的结果一致，那这些exemplars就是好的exemplars。论文基于这样的目的，把exemplars当成参数，优化之，目标是在此任务的所有数据上表现好。像maml。额外的：weight transfer， fine-tune on exemplars， old emeplars adjustment（用上述思想，存疑）
 
 - <a name="todo"></a> Accepted papers(**ICLR2020**) [[paper](https://docs.google.com/presentation/d/17s5Y8N9dypH-59tuwKaCp80NYBxTmtT6V-zOFlsH-SA/edit?usp=sharing)]
 ### 2019
@@ -104,7 +95,7 @@ neural gas在base时使用固定数量的anchor，之后新任务每次增加若
 - <a name="todo"></a> IL2M: Class Incremental Learning With Dual Memory
  (**ICCV2019**) [[paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Belouadah_IL2M_Class_Incremental_Learning_With_Dual_Memory_ICCV_2019_paper.pdf)]
  
- 额外保存old class的在当年任务的激活值的平均值，在新任务推断时，用这些值对激活值做修正。
+     额外保存old class的在当年任务的激活值的平均值，在新任务推断时，用这些值对激活值做修正。
 
 - <a name="todo"></a> Incremental Learning Using Conditional Adversarial Networks
  (**ICCV2019**) [[paper](http://openaccess.thecvf.com/content_ICCV_2019/html/Xiang_Incremental_Learning_Using_Conditional_Adversarial_Networks_ICCV_2019_paper.html)]
@@ -120,7 +111,7 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
 - <a name="todo"></a> Learning a Unified Classifier Incrementally via Rebalancing (**CVPR2019**) [[paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Hou_Learning_a_Unified_Classifier_Incrementally_via_Rebalancing_CVPR_2019_paper.pdf)] [[code](https://github.com/hshustc/CVPR19_Incremental_Learning)]
 - <a name="todo"></a> Learning Without Memorizing (**CVPR2019**) [[paper](https://arxiv.org/pdf/1811.08051.pdf)] 
 
-在训练新任务时，除了分类loss和蒸馏loss，还增加了对attention map的蒸馏loss.
+    在训练新任务时，除了分类loss和蒸馏loss，还增加了对attention map的蒸馏loss.
 
 - <a name="todo"></a> Learning to Remember: A Synaptic Plasticity Driven Framework for Continual Learning (**CVPR2019**) [[paper](https://arxiv.org/abs/1904.03137)] 
 - <a name="todo"></a> Task-Free Continual Learning (**CVPR2019**) [[paper](https://arxiv.org/pdf/1812.03596.pdf)]
@@ -135,9 +126,9 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
 - <a name="todo"></a> Memory Replay GANs: learning to generate images from new categories without forgetting
  (**NIPS2018**) [[paper](https://arxiv.org/abs/1809.02058)] [[code](https://github.com/WuChenshen/MeRGAN
  
- 两种策略。
- 1. 每次有新任务时，先用原c-GAN生成数据，这些数据和新数据一起用来训练新的c-GAN.
- 2. 直接训练新c-GAN，同时用原GAN和新GAN用同一噪声(condition是原类的类别)训练出的图片做pixel-wise的aligned.
+     两种策略。
+     1. 每次有新任务时，先用原c-GAN生成数据，这些数据和新数据一起用来训练新的c-GAN.
+     2. 直接训练新c-GAN，同时用原GAN和新GAN用同一噪声(condition是原类的类别)训练出的图片做pixel-wise的aligned.
  
  - <a name="todo"></a> Reinforced Continual Learning (**NIPS2018**) [[paper](http://papers.nips.cc/paper/7369-reinforced-continual-learning.pdf)] [[code](https://github.com/xujinfan/Reinforced-Continual-Learning)]
  - <a name="todo"></a> Online Structured Laplace Approximations for Overcoming Catastrophic Forgetting (**NIPS2018**) [[paper](http://papers.nips.cc/paper/7631-online-structured-laplace-approximations-for-overcoming-catastrophic-forgetting.pdf)]
@@ -146,7 +137,7 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
 - <a name="todo"></a> DeeSIL: Deep-Shallow Incremental Learning (**ECCV2018**) [[paper](https://arxiv.org/pdf/1808.06396.pdf)] 
 - <a name="todo"></a> End-to-End Incremental Learning (**ECCV2018**) [[paper](https://arxiv.org/abs/1807.09536)][[code](https://github.com/fmcp/EndToEndIncrementalLearning)]
 
-和icarl很像，区别在于icarl训练时把旧类别的label替换为old model的输出，然后计算分类loss。这篇直接把分类loss和蒸馏loss分别计算了。同时还加了数据增强和gradient noise。同时，在训练完一个任务后，使用了balance的dataset进行fine-tune，fine-tune过程也使用了分类loss和蒸馏loss。根据它的ablation study, 没有数据增强和balance fine-tune的话，它的效果并不如icarl.
+    和icarl很像，区别在于icarl训练时把旧类别的label替换为old model的输出，然后计算分类loss。这篇直接把分类loss和蒸馏loss分别计算了。同时还加了数据增强和gradient noise。同时，在训练完一个任务后，使用了balance的dataset进行fine-tune，fine-tune过程也使用了分类loss和蒸馏loss。根据它的ablation study, 没有数据增强和balance fine-tune的话，它的效果并不如icarl.
 
 - <a name="todo"></a> Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence (**ECCV2018**)[[paper](http://arxiv-export-lb.library.cornell.edu/abs/1801.10112)] 
 - <a name="todo"></a> Piggyback: Adapting a Single Network to Multiple Tasks by Learning to Mask Weights (**ECCV2018**) [[paper](https://arxiv.org/abs/1801.06519)] [[code](https://github.com/arunmallya/piggyback)]
@@ -165,11 +156,11 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
 - <a name="todo"></a> Gradient Episodic Memory for Continual Learning (**NIPS2017**) [[paper](https://arxiv.org/abs/1706.08840)] [[code](https://github.com/facebookresearch/GradientEpisodicMemory)]
 - <a name="todo"></a> iCaRL: Incremental Classifier and Representation Learning (**CVPR2017**) [[paper](https://arxiv.org/abs/1611.07725)] [[code](https://github.com/srebuffi/iCaRL)]
 
-每类维护若干标本，使其均值接近类中心。总标本数量固定，每次为新类构建标本，旧类减少标本。
+    每类维护若干标本，使其均值接近类中心。总标本数量固定，每次为新类构建标本，旧类减少标本。
 
 - <a name="todo"></a> Continual Learning with Deep Generative Replay (**NIPS2017**) [[paper](https://arxiv.org/abs/1705.08690)] [[code](https://github.com/kuc2477/pytorch-deep-generative-replay)]
 
-使用GAN生成数据参与训练，每次再用合并数据重新训练GAN.
+    使用GAN生成数据参与训练，每次再用合并数据重新训练GAN.
 
 - <a name="todo"></a> Overcoming Catastrophic Forgetting by Incremental Moment Matching (**NIPS2017**) [[paper](https://arxiv.org/abs/1703.08475)] [[code](https://github.com/btjhjeon/IMM_tensorflow)]
 - <a name="todo"></a> Expert Gate: Lifelong Learning with a Network of Experts (**CVPR2017**) [[paper](https://arxiv.org/abs/1611.06194)] 
