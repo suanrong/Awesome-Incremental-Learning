@@ -26,7 +26,7 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 ### 2020
 - <a name="todo"></a> Adversarial Continual Learning (**ECCV2020**) [[paper](https://arxiv.org/abs/2003.09553)]  [[code](https://github.com/facebookresearch/Adversarial-Continual-Learning)]
 
-属于task_id aware的模型, 用对抗学习的方法分离feature中task-invariant和task-specific中的部分.
+ - 属于task_id aware的模型, 用对抗学习的方法分离feature中task-invariant和task-specific中的部分.
 
 - <a name="todo"></a> REMIND Your Neural Network to Prevent Catastrophic Forgetting (**ECCV2020**) [[paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123530460.pdf)]  [[code](https://github.com/tyler-hayes/REMIND)]
 
