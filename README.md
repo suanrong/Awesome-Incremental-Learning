@@ -58,7 +58,13 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
     直接选exemplars, 只基于exemplars训练，然后测试。
 
 - <a name="todo"></a> Imbalanced Continual Learning with Partitioning Reservoir Sampling	 (**ECCV2020**) [[paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580409.pdf)]
+
+    解决multi-label问题，没仔细看。
+
 - <a name="todo"></a> Topology-Preserving Class-Incremental Learning (**ECCV2020**) [[paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123640256.pdf)]
+
+    跟neural gas那篇比较像。没仔细看。
+
 - <a name="todo"></a> OvA-INN: Continual Learning with Invertible Neural Networks (**IJCNN2020**) [[paper](https://arxiv.org/abs/2006.13772)]
 - <a name="todo"></a> XtarNet: Learning to Extract Task-Adaptive Representation
 for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/2003.08561.pdf)]
