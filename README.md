@@ -37,9 +37,12 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 论文做的是incremental的meta learning。训练incremental的meta数据时，让新类样本的特征在过旧类分类器后，能得到和之前相似的输出（公式6）。
 
 - <a name="todo"></a> Memory-Efficient Incremental Learning Through Feature Adaptation (**ECCV2020**) [[paper](https://arxiv.org/abs/2004.00713)]
+
+论文使用了一个feature adaptation网络来解决任务切换导致的feature space不同的问题。
+
 - <a name="todo"></a> PODNet: Pooled Outputs Distillation for Small-Tasks Incremental Learning (**ECCV2020**) [[paper](https://arxiv.org/abs/2004.13513)] [[code](https://github.com/arthurdouillard/incremental_learning.pytorch)]
 
-分类时，对于每一类，用多个w和样本特征的距离来计算分类logit。 loss 是在CNN中间层加pooling后的约束 ， embedding层的约束。
+分类时，对于每一类，用多个w和样本特征的距离来计算分类logit。 loss 是在CNN中间层加pooling后的Distillation约束 ， embedding层的Distillation约束。
 
 - <a name="todo"></a> Reparameterizing Convolutions for Incremental Multi-Task Learning Without Task Interference (**ECCV2020**) [[paper](https://arxiv.org/abs/2007.12540)]
 - <a name="todo"></a> Learning latent representions across multiple data domains using Lifelong VAEGAN (**ECCV2020**) [[paper](https://arxiv.org/abs/2007.10221)]
