@@ -29,6 +29,9 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 属于task_id aware的模型, 用对抗学习的方法分离feature中task-invariant和task-specific中的部分.
 
 - <a name="todo"></a> REMIND Your Neural Network to Prevent Catastrophic Forgetting (**ECCV2020**) [[paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123530460.pdf)]  [[code](https://github.com/tyler-hayes/REMIND)]
+
+论文把nn分成两部分，前一部分frozen，后一部分可训练。exemplar不再是原始图片，而是前一部分的输出。另外还使用了tensor quantization来得到提高memory的储存效率。
+
 - <a name="todo"></a> Incremental Meta-Learning via Indirect Discriminant Alignment (**ECCV2020**) [[paper](https://arxiv.org/abs/2002.04162)]
 
 论文做的是incremental的meta learning。训练incremental的meta数据时，让新类样本的特征在过旧类分类器后，能得到和之前相似的输出（公式6）。
