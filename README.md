@@ -128,6 +128,9 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
 - <a name="todo"></a> Learning to Remember: A Synaptic Plasticity Driven Framework for Continual Learning (**CVPR2019**) [[paper](https://arxiv.org/abs/1904.03137)] 
 - <a name="todo"></a> Task-Free Continual Learning (**CVPR2019**) [[paper](https://arxiv.org/pdf/1812.03596.pdf)]
 - <a name="todo"></a> Learn to Grow: A Continual Structure Learning Framework for Overcoming Catastrophic Forgetting (**ICML2019**) [[paper](https://arxiv.org/abs/1904.00310)]
+
+    模型在训练新任务时，对每一层可以选择reuse，adaptation(加一层conv 1X1)，new三种操作，用architecture weight去搜索新任务的结构。
+
 - <a name="todo"></a> Efficient Lifelong Learning with A-GEM (**ICLR2019**) [[paper](https://openreview.net/forum?id=Hkf2_sC5FX)] [[code](https://github.com/facebookresearch/agem)]
 - <a name="todo"></a> Learning to Learn without Forgetting By Maximizing Transfer and Minimizing Interference (**ICLR2019**) [[paper](https://openreview.net/forum?id=B1gTShAct7)] [[code](https://github.com/mattriemer/mer)]
 - <a name="todo"></a> Overcoming Catastrophic Forgetting via Model Adaptation (**ICLR2019**) [[paper](https://openreview.net/forum?id=ryGvcoA5YX)] 
