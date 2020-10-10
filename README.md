@@ -26,6 +26,9 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 ### 2020
 - <a name="todo"></a> Meta-Consolidation for Continual Learning (**NeurIPS2020**) [[paper](https://arxiv.org/abs/2010.00352?context=cs)] 
 - <a name="todo"></a> Understanding the Role of Training Regimes in Continual Learning (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2006.06958.pdf)] 
+
+    论文提出来了一个遗忘的上界（和权重变化，loss关于权重的二次导的最大特征值有关），同时提出dropout regularization, large initial learning rate with exponential decay schedule at the end of each task, and small batch size有助于模型找到一个更平坦的最优值点。这可以有效地避免遗忘。 相当于是把泛化性与鲁棒性和遗忘率联系在了一起。
+
 - <a name="todo"></a> Continual Learning with Node-Importance based Adaptive Group Sparse Regularization (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2003.13726.pdf)] 
 - <a name="todo"></a> Online Fast Adaptation and Knowledge Accumulation (OSAKA):a New Approach to Continual Learning (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2003.05856.pdf)] 
 - <a name="todo"></a> Coresets via Bilevel Optimization for Continual Learning and Streaming (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2006.03875.pdf)] 
