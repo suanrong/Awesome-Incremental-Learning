@@ -30,6 +30,9 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
     论文提出来了一个遗忘的上界（和权重变化，loss关于权重的二次导的最大特征值有关），同时提出dropout regularization, large initial learning rate with exponential decay schedule at the end of each task, and small batch size有助于模型找到一个更平坦的最优值点。这可以有效地避免遗忘。 相当于是把泛化性与鲁棒性和遗忘率联系在了一起。
 
 - <a name="todo"></a> Continual Learning with Node-Importance based Adaptive Group Sparse Regularization (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2003.13726.pdf)] 
+
+    论文把神经网络中的节点分成重要的和不重要的，每次训练新任务后会更新这个划分。同时，不重要的节点会被初始化。论文的loss加入了稀疏的约束，同时还使用PGD的优化方法。
+
 - <a name="todo"></a> Online Fast Adaptation and Knowledge Accumulation (OSAKA):a New Approach to Continual Learning (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2003.05856.pdf)] 
 - <a name="todo"></a> Coresets via Bilevel Optimization for Continual Learning and Streaming (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2006.03875.pdf)] 
 - <a name="todo"></a> RATT: Recurrent Attention to Transient Tasks for Continual Image Captioning (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2007.06271.pdf)] 
