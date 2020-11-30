@@ -42,6 +42,9 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
     论文针对没有task-boundary的情况，用reservoir采样替换herding采样，用logit的欧式距离替代概率的KL距离。
 
 - <a name="todo"></a> GAN Memory with No Forgetting (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2006.07543.pdf)] 
+
+    论文用Style-transfer的技术来解决continual GAN的问题，没有重训整个GAN，而是训练了一小部分task特定的参数。
+
 - <a name="todo"></a> Adversarial Continual Learning (**ECCV2020**) [[paper](https://arxiv.org/abs/2003.09553)]  [[code](https://github.com/facebookresearch/Adversarial-Continual-Learning)]
 
     属于task_id aware的模型, 用对抗学习的方法分离feature中task-invariant和task-specific中的部分.
