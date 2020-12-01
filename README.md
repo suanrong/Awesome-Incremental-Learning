@@ -37,6 +37,9 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 - <a name="todo"></a> Coresets via Bilevel Optimization for Continual Learning and Streaming (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2006.03875.pdf)] 
 - <a name="todo"></a> RATT: Recurrent Attention to Transient Tasks for Continual Image Captioning (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2007.06271.pdf)] 
 - <a name="todo"></a> Continual Deep Learning by Functional Regularisation of Memorable Past (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2004.14070.pdf)] 
+
+    DNN2GP，把past任务的模型参数model成prior，不太懂。
+
 - <a name="todo"></a> Dark Experience for General Continual Learning: a Strong, Simple Baseline (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2004.07211.pdf)] 
 
     论文针对没有task-boundary的情况，用reservoir采样替换herding采样，用logit的欧式距离替代概率的KL距离。
