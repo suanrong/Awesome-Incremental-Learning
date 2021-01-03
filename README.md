@@ -42,7 +42,7 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 
 - <a name="todo"></a> Online Fast Adaptation and Knowledge Accumulation (OSAKA):a New Approach to Continual Learning (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2003.05856.pdf)] 
 
-    continual-MAML？
+    论文提出了continual-MAML？
 
 - <a name="todo"></a> Coresets via Bilevel Optimization for Continual Learning and Streaming (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2006.03875.pdf)] 
 - <a name="todo"></a> RATT: Recurrent Attention to Transient Tasks for Continual Image Captioning (**NeurIPS2020**) [[paper](https://arxiv.org/pdf/2007.06271.pdf)] 
