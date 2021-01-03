@@ -24,6 +24,10 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
  (**arXiv 2018**) [[paper](https://arxiv.org/abs/1802.07569)]
 ## Papers
 ### 2020
+- <a name="todo"></a> Calibrating CNNs for Lifelong Learning (**NeurIPS2020**) [[paper](http://people.ee.duke.edu/~lcarin/Final_Calibration_Incremental_Learning_NeurIPS_2020.pdf)] 
+
+    训练完第一个任务后，固定CNN，对于每个新任务，CNN的每一层后面都接一个调整层，调整层的输出再作为CNN下一层的输入。
+
 - <a name="todo"></a> Meta-Consolidation for Continual Learning (**NeurIPS2020**) [[paper](https://arxiv.org/abs/2010.00352?context=cs)] 
 
     挺有意思的工作。论文假设对于每个任务，模型的最优参数空间是个分布。对于当前任务，训练多个模型，用这些模型的参数，学习一个对当前任务的模型参数的分布（VAE）。在学完新任务后，把之前的VAE生成的模型参数和新得到的模型参数一起训练，得到新的VAE。最后测试前会采样多个模型进行finetune 和 ensemble。
