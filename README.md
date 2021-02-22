@@ -178,7 +178,11 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
      两种策略。
      1. 每次有新任务时，先用原c-GAN生成数据，这些数据和新数据一起用来训练新的c-GAN.
      2. 直接训练新c-GAN，同时用原GAN和新GAN用同一噪声(condition是原类的类别)训练出的图片做pixel-wise的aligned.
- 
+  
+ - <a name="todo"></a> Selective Experience Replay for Lifelong Learning (**AAAI2018**) [[paper](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16054/16703)] 
+
+    与icarl类似，提出了几种选择exemplar的策略。
+
  - <a name="todo"></a> Reinforced Continual Learning (**NIPS2018**) [[paper](http://papers.nips.cc/paper/7369-reinforced-continual-learning.pdf)] [[code](https://github.com/xujinfan/Reinforced-Continual-Learning)]
  - <a name="todo"></a> Online Structured Laplace Approximations for Overcoming Catastrophic Forgetting (**NIPS2018**) [[paper](http://papers.nips.cc/paper/7631-online-structured-laplace-approximations-for-overcoming-catastrophic-forgetting.pdf)]
 - <a name="todo"></a> Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting (R-EWC) (**ICPR2018**) [[paper](https://arxiv.org/abs/1802.02950)] [[code](https://github.com/xialeiliu/RotateNetworks)]
