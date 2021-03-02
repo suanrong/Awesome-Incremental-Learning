@@ -153,6 +153,9 @@ for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/
 - <a name="todo"></a> Adaptive Deep Models for Incremental Learning: Considering Capacity Scalability and Sustainability (**KDD2019**) [[paper](http://www.lamda.nju.edu.cn/yangy/KDD19.pdf)]
 - <a name="todo"></a> Random Path Selection for Incremental Learning (**NeurIPS2019**) [[paper](https://arxiv.org/pdf/1906.01120.pdf)]
 - <a name="todo"></a> Online Continual Learning with Maximal Interfered Retrieval (**NeurIPS2019**) [[paper](http://papers.neurips.cc/paper/9357-online-continual-learning-with-maximal-interfered-retrieval)]
+
+     在更新当前任务的batch后，选择memory里那些loss上升最大的样本，来参与更新。
+
 - <a name="todo"></a> Overcoming Catastrophic Forgetting with Unlabeled Data in the Wild (**ICCV2019**) [[paper](https://arxiv.org/pdf/1903.12648.pdf)]
 - <a name="todo"></a> Continual Learning by Asymmetric Loss Approximation
 with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/1908.02984.pdf)]
