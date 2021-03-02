@@ -26,7 +26,7 @@ to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arx
 ### 2021
 - <a name="todo"></a> Online Class-Incremental Continual Learning with Adversarial Shapley Value(**AAAI, 2021**) [[paper](https://arxiv.org/abs/2009.00093)] [[code](https://github.com/RaptorMai/online-continual-learning)]
 
-online的setting下，每次训练新的batch时，会从memory里选取一小部分进行合并，然后一起训练。选取的规则通过KNN的Shapley Value来确定，有一定道理，
+    online的setting下，每次训练新的batch时，会从memory里选取一小部分进行合并，然后一起训练。选取的规则通过KNN的Shapley Value来确定，有一定道理，
 
 ### 2020
 - <a name="todo"></a> Calibrating CNNs for Lifelong Learning (**NeurIPS2020**) [[paper](http://people.ee.duke.edu/~lcarin/Final_Calibration_Incremental_Learning_NeurIPS_2020.pdf)] 
