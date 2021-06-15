@@ -6,6 +6,7 @@
 - <a name="todo"></a> A Comprehensive Study of Class Incremental Learning Algorithms for Visual Tasks (**Neural Networks**) [[paper](https://arxiv.org/abs/2011.01844)] [[code](https://github.com/EdenBelouadah/class-incremental-learning/tree/master/cil)]
 - <a name="todo"></a> A continual learning survey: Defying forgetting in classification tasks (**TPAMI 2021**) [[paper]](https://ieeexplore.ieee.org/abstract/document/9349197) [[arxiv](https://arxiv.org/pdf/1909.08383.pdf)]
 - <a name="todo"></a> Continual Lifelong Learning with Neural Networks: A Review
+ (**Neural Networks**) [[paper](https://arxiv.org/abs/1802.07569)]
 ## Papers
 ### 2021
 - <a name="todo"></a> Adapting BERT for Continual Learning of a Sequence of Aspect Sentiment Classification Tasks (**NAACL, 2021**) [[paper](https://www.aclweb.org/anthology/2021.naacl-main.378.pdf)]
@@ -27,6 +28,7 @@
  (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2011.11390)] 
  - <a name="todo"></a> Continual Semantic Segmentation via Repulsion-Attraction of Sparse and Disentangled Latent Representations
  (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2103.06342)] 
+- <a name="todo"></a> Online Class-Incremental Continual Learning with Adversarial Shapley Value(**AAAI, 2021**) [[paper](https://arxiv.org/abs/2009.00093)] [[code](https://github.com/RaptorMai/online-continual-learning)]
 - <a name="todo"></a> Lifelong and Continual Learning Dialogue Systems: Learning during Conversation(**AAAI, 2021**)  [[paper](https://www.cs.uic.edu/~liub/publications/LINC_paper_AAAI_2021_camera_ready.pdf)] 
 - <a name="todo"></a> Continual learning for named entity recognition(**AAAI, 2021**) [[paper](https://www.amazon.science/publications/continual-learning-for-named-entity-recognition)] 
 - <a name="todo"></a> Using Hindsight to Anchor Past Knowledge in Continual Learning(**AAAI, 2021**) [[paper](https://arxiv.org/abs/2002.08165)] 
@@ -118,7 +120,7 @@
 - <a name="todo"></a> Topology-Preserving Class-Incremental Learning (**ECCV2020**) [[paper](http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123640256.pdf)]
 
     跟neural gas那篇比较像。没仔细看。
-
+- <a name="todo"></a> GraphSAIL: Graph Structure Aware Incremental Learning for Recommender Systems (**CIKM2020**) [[paper](https://arxiv.org/abs/2008.13517)]
 - <a name="todo"></a> OvA-INN: Continual Learning with Invertible Neural Networks (**IJCNN2020**) [[paper](https://arxiv.org/abs/2006.13772)]
 - <a name="todo"></a> XtarNet: Learning to Extract Task-Adaptive Representation
 for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/2003.08561.pdf)]
@@ -127,6 +129,7 @@ for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/
     每个任务的最优参数空间是一个集合，那么持续学习就是在找这些集合的交里的的某个元素。在参数空间里判断集合是否有交是np-complete，所以最优持续学习是np-hard的。最优的持续学习需要perfect memory：新任务的最优参数空间是未知的，为了与新任务的参数空间求交，要知道到现在为止，最优的参数空间的交的集合，而不是集合的某个元素（当前模型的参数）。
 
 - <a name="todo"></a> Neural Topic Modeling with Continual Lifelong Learning (**ICML2020**) [[paper](https://arxiv.org/pdf/2006.10909.pdf)]
+- <a name="todo"></a> Continual Learning with Knowledge Transfer for Sentiment Classification (**ECML-PKDD2020**) [[paper](https://www.cs.uic.edu/~liub/publications/ECML-PKDD-2020.pdf)] [[code](https://github.com/ZixuanKe/LifelongSentClass)]
 - <a name="todo"></a> Semantic Drift Compensation for Class-Incremental Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00440.pdf)] [[code](https://github.com/yulu0724/SDC-IL)]
 
     先维护每类在embedding space中的mean（类中心）：当前任务的样本在训练前后会产生drift，用这些drift来计算每类中心点的drift。
@@ -136,6 +139,10 @@ for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/
 
     用neural gas模型对feature space 建模，两个loss，第一个为了防止遗忘：neural gas中的点不能变化太多，这个loss考虑到了维度里面的方差。第二个loss为了避免过拟合新任务：代表新类的anchor远离原有的点，靠近新类的sample。neural gas在base时使用固定数量的anchor，之后新任务每次增加若干anchor.
 
+- <a name="todo"></a> Modeling the Background for Incremental Learning in Semantic Segmentation (**CVPR2020**) [[paper](https://arxiv.org/pdf/2002.00718.pdf)]
+- <a name="todo"></a> Incremental Few-Shot Object Detection (**CVPR2020**) [[paper](https://arxiv.org/pdf/2003.04668.pdf)]
+- <a name="todo"></a> Incremental Learning In Online Scenario (**CVPR2020**) [[paper](https://arxiv.org/pdf/2003.13191.pdf)]
+- <a name="todo"></a> Maintaining Discrimination and Fairness in Class Incremental Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/1911.07053.pdf)]
 - <a name="todo"></a> Conditional Channel Gated Networks for Task-Aware Continual Learning (**CVPR2020**) [[paper](https://arxiv.org/pdf/2004.00070.pdf)]
 
     对于每个task，通过门结构选择来激活或不激活conv的某些channel（有点像attention）, 激活过的在之后任务中被freeze。模型包含task-classifier来确定task ID，使用了令网络稀疏的loss（使激活的通道尽量少），
@@ -150,7 +157,9 @@ for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/
 
     对于某个任务，如果在exemplars上训练得到的模型和在此任务的所有数据上训练得到的模型的结果一致，那这些exemplars就是好的exemplars。论文基于这样的目的，把exemplars当成参数，优化之，目标是在此任务的所有数据上表现好。像maml。额外的：weight transfer， fine-tune on exemplars， old emeplars adjustment（用上述思想，存疑）
 
+- <a name="todo"></a> ScaIL: Classifier Weights Scaling for Class Incremental Learning (**WACV2020**) [[paper](https://arxiv.org/abs/2001.05755)]
 - <a name="todo"></a> Accepted papers(**ICLR2020**) [[paper](https://docs.google.com/presentation/d/17s5Y8N9dypH-59tuwKaCp80NYBxTmtT6V-zOFlsH-SA/edit?usp=sharing)]
+- <a name="todo"></a> Brain-inspired replay for continual learning with artificial neural networks (**Natrue Communications 2020**) [[paper](https://www.nature.com/articles/s41467-020-17866-2)] [[code](https://github.com/GMvandeVen/brain-inspired-replay)]
 ### 2019
 - <a name="todo"></a> Compacting, Picking and Growing for Unforgetting Continual Learning (**NeurIPS2019**)[[paper](https://papers.nips.cc/paper/9518-compacting-picking-and-growing-for-unforgetting-continual-learning.pdf)][[code](https://github.com/ivclab/CPG)]
 
@@ -158,6 +167,7 @@ for Incremental Few-Shot Learning (**ICLM2020**) [[paper](https://arxiv.org/pdf/
 
 - <a name="todo"></a> Increasingly Packing Multiple Facial-Informatics Modules in A Unified Deep-Learning Model via Lifelong Learning (**ICMR2019**) [[paper](https://dl.acm.org/doi/10.1145/3323873.3325053)][[code](https://github.com/ivclab/PAE)]
 - <a name="todo"></a> Towards Training Recurrent Neural Networks for Lifelong Learning (**Neural Computation 2019**) [[paper](https://arxiv.org/pdf/1811.07017.pdf)]
+- <a name="todo"></a> Complementary Learning for Overcoming Catastrophic Forgetting Using Experience Replay  (**IJCAI2019**) [[paper]](https://www.ijcai.org/Proceedings/2019/0463.pdf)
 - <a name="todo"></a> IL2M: Class Incremental Learning With Dual Memory
  (**ICCV2019**) [[paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Belouadah_IL2M_Class_Incremental_Learning_With_Dual_Memory_ICCV_2019_paper.pdf)]
  
@@ -192,7 +202,6 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
 - <a name="todo"></a> Learning to Learn without Forgetting By Maximizing Transfer and Minimizing Interference (**ICLR2019**) [[paper](https://openreview.net/forum?id=B1gTShAct7)] [[code](https://github.com/mattriemer/mer)]
 - <a name="todo"></a> Overcoming Catastrophic Forgetting via Model Adaptation (**ICLR2019**) [[paper](https://openreview.net/forum?id=ryGvcoA5YX)] 
 - <a name="todo"></a> A comprehensive, application-oriented study of catastrophic forgetting in DNNs (**ICLR2019**) [[paper](https://openreview.net/forum?id=BkloRs0qK7)] 
-- <a name="todo"></a> Incremental Learning Techniques for Semantic Segmentation (**ICCVW2019**) [[paper](https://arxiv.org/abs/1907.13372)] [[code](https://github.com/LTTM/IL-SemSegm)]
 
 ### 2018
 - <a name="todo"></a> Memory Replay GANs: learning to generate images from new categories without forgetting
@@ -210,7 +219,6 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
  - <a name="todo"></a> Online Structured Laplace Approximations for Overcoming Catastrophic Forgetting (**NIPS2018**) [[paper](http://papers.nips.cc/paper/7631-online-structured-laplace-approximations-for-overcoming-catastrophic-forgetting.pdf)]
 - <a name="todo"></a> Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting (R-EWC) (**ICPR2018**) [[paper](https://arxiv.org/abs/1802.02950)] [[code](https://github.com/xialeiliu/RotateNetworks)]
 - <a name="todo"></a> Exemplar-Supported Generative Reproduction for Class Incremental Learning  (**BMVC2018**) [[paper](http://bmvc2018.org/contents/papers/0325.pdf)] [[code](https://github.com/TonyPod/ESGR)]
-- <a name="todo"></a> DeeSIL: Deep-Shallow Incremental Learning (**ECCV2018**) [[paper](https://arxiv.org/pdf/1808.06396.pdf)] 
 - <a name="todo"></a> End-to-End Incremental Learning (**ECCV2018**) [[paper](https://arxiv.org/abs/1807.09536)][[code](https://github.com/fmcp/EndToEndIncrementalLearning)]
 
     和icarl很像，区别在于icarl训练时把旧类别的label替换为old model的输出，然后计算分类loss。这篇直接把分类loss和蒸馏loss分别计算了。同时还加了数据增强和gradient noise。同时，在训练完一个任务后，使用了balance的dataset进行fine-tune，fine-tune过程也使用了分类loss和蒸馏loss。根据它的ablation study, 没有数据增强和balance fine-tune的话，它的效果并不如icarl.
@@ -245,5 +253,23 @@ with Single-Side Overestimation (**ICCV2019**) [[paper](https://arxiv.org/pdf/19
 ### 2016
 - <a name="todo"></a> Learning without forgetting (**ECCV2016**) [[paper](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_37)] [[code](https://github.com/lizhitwo/LearningWithoutForgetting)]
 
+## [Awesome Long-Tailed Recognition / Imbalanced Learning](https://github.com/xialeiliu/Awesome-LongTailed-Recognition)
+#### Find it interesting that there are more shared techniques than I thought for incremental learning (exemplars-based). 
 
+## ContinualAI wiki
+#### [An Open Community of Researchers and Enthusiasts on Continual/Lifelong Learning for AI](https://www.continualai.org/)
+
+## Workshops
+#### [4th Lifelong Learning Workshop at ICML 2020](https://lifelongml.github.io/)
+#### [Workshop on Continual Learning at ICML 2020](https://icml.cc/Conferences/2020/Schedule?showEvent=5743)
+#### [Continual Learning in Computer Vision Workshop CVPR 2020](https://sites.google.com/view/clvision2020/overview)
+#### [Continual learning workshop NeurIPS 2018](https://sites.google.com/view/continual2018/home?authuser=0)
+
+## Challenges or Competitions
+#### [1st Lifelong Learning for Machine Translation Shared Task at WMT20 (EMNLP 2020)](http://www.statmt.org/wmt20/lifelong-learning-task.html)
+#### [Continual Learning in Computer Vision Challenge CVPR 2020](https://sites.google.com/view/clvision2020/challenge?authuser=0)
+#### [Lifelong Robotic Vision Challenge IROS 2019](https://lifelong-robotic-vision.github.io)
+
+## Feel free to contact me if you find any interesting paper is missing.
+## Workshop papers are currently out due to space.
 
