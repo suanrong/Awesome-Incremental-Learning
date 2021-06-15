@@ -1,34 +1,49 @@
 # Awesome Incremental Learning / Lifelong learning
-## Feel free to contact me if you find any interesting paper is missing.
-
-## [Awesome Long-Tailed Recognition / Imbalanced Learning](https://github.com/xialeiliu/Awesome-LongTailed-Recognition)
-#### Find it interesting that there are more shared techniques than I thought for incremental learning (exemplars-based). 
-
-## ContinualAI wiki
-#### [An Open Community of Researchers and Enthusiasts on Continual/Lifelong Learning for AI](https://www.continualai.org/)
-
-## Workshops
-#### [4th Lifelong Learning Workshop at ICML 2020](https://lifelongml.github.io/)
-#### [Workshop on Continual Learning at ICML 2020](https://icml.cc/Conferences/2020/Schedule?showEvent=5743)
-#### [Continual Learning in Computer Vision Workshop CVPR 2020](https://sites.google.com/view/clvision2020/overview)
-#### [Continual learning workshop NeurIPS 2018](https://sites.google.com/view/continual2018/home?authuser=0)
-
-## Challenges or Competitions
-#### [Lifelong Robotic Vision Challenge IROS 2019](https://lifelong-robotic-vision.github.io)
-#### [Continual Learning in Computer Vision Challenge CVPR 2020](https://sites.google.com/view/clvision2020/challenge?authuser=0)
-
 ## Survey
-- <a name="todo"></a> Continual learning: A comparative study on how
-to defy forgetting in classification tasks (**arXiv 2019**) [[paper](https://arxiv.org/pdf/1909.08383.pdf)]
+- <a name="todo"></a> Online Continual Learning in Image Classification: An Empirical Survey (**arXiv 2020**) [[paper](https://arxiv.org/abs/2101.10423)] [[code](https://github.com/RaptorMai/online-continual-learning)]
+- <a name="todo"></a> Continual Lifelong Learning in Natural Language Processing: A Survey (**COLING 2020**) [[paper](https://www.aclweb.org/anthology/2020.coling-main.574/)]
+- <a name="todo"></a> Class-incremental learning: survey and performance evaluation (**arXiv 2020**) [[paper](https://arxiv.org/abs/2010.15277)] [[code](https://github.com/mmasana/FACIL)]
+- <a name="todo"></a> A Comprehensive Study of Class Incremental Learning Algorithms for Visual Tasks (**Neural Networks**) [[paper](https://arxiv.org/abs/2011.01844)] [[code](https://github.com/EdenBelouadah/class-incremental-learning/tree/master/cil)]
+- <a name="todo"></a> A continual learning survey: Defying forgetting in classification tasks (**TPAMI 2021**) [[paper]](https://ieeexplore.ieee.org/abstract/document/9349197) [[arxiv](https://arxiv.org/pdf/1909.08383.pdf)]
 - <a name="todo"></a> Continual Lifelong Learning with Neural Networks: A Review
- (**arXiv 2018**) [[paper](https://arxiv.org/abs/1802.07569)]
 ## Papers
 ### 2021
+- <a name="todo"></a> Adapting BERT for Continual Learning of a Sequence of Aspect Sentiment Classification Tasks (**NAACL, 2021**) [[paper](https://www.aclweb.org/anthology/2021.naacl-main.378.pdf)]
+- <a name="todo"></a> Continual Learning for Text Classification with Information Disentanglement Based Regularization (**NAACL, 2021**) [[paper](https://www.aclweb.org/anthology/2021.naacl-main.218.pdf)]
+- <a name="todo"></a> Layerwise Optimization by Gradient Decomposition for Continual Learning (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2105.07561)] 
+- <a name="todo"></a> Adaptive Aggregation Networks for Class-Incremental Learning (**CVPR, 2021**) [[paper](https://arxiv.org/pdf/2010.05063.pdf)] 
+- <a name="todo"></a> Incremental Few-Shot Instance Segmentation (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2105.05312)] 
+- <a name="todo"></a> Efficient Feature Transformations for Discriminative and Generative Continual Learning (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2103.13558)] 
+- <a name="todo"></a> On Learning the Geodesic Path for Incremental Learning (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2104.08572)]
+- <a name="todo"></a> Few-Shot Incremental Learning with Continually Evolved Classifiers (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2104.03047)] 
+- <a name="todo"></a> Rectification-based Knowledge Retention for Continual Learning (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2103.16597)] 
+- <a name="todo"></a> DER: Dynamically Expandable Representation for Class Incremental Learning (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2103.16788)] 
+- <a name="todo"></a> Rainbow Memory: Continual Learning with a Memory of Diverse Samples (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2103.17230)] 
+- <a name="todo"></a> Training Networks in Null Space of Feature Covariance for Continual Learning
+ (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2103.07113)] 
+- <a name="todo"></a> Semantic-aware Knowledge Distillation for Few-Shot Class-Incremental Learning
+ (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2103.04059)] 
+ - <a name="todo"></a> PLOP: Learning without Forgetting for Continual Semantic Segmentation
+ (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2011.11390)] 
+ - <a name="todo"></a> Continual Semantic Segmentation via Repulsion-Attraction of Sparse and Disentangled Latent Representations
+ (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2103.06342)] 
+- <a name="todo"></a> Lifelong and Continual Learning Dialogue Systems: Learning during Conversation(**AAAI, 2021**)  [[paper](https://www.cs.uic.edu/~liub/publications/LINC_paper_AAAI_2021_camera_ready.pdf)] 
+- <a name="todo"></a> Continual learning for named entity recognition(**AAAI, 2021**) [[paper](https://www.amazon.science/publications/continual-learning-for-named-entity-recognition)] 
+- <a name="todo"></a> Using Hindsight to Anchor Past Knowledge in Continual Learning(**AAAI, 2021**) [[paper](https://arxiv.org/abs/2002.08165)] 
+- <a name="todo"></a> Curriculum-Meta Learning for Order-Robust Continual Relation Extraction(**AAAI, 2021**) [[paper](https://arxiv.org/abs/2101.01926)] 
+- <a name="todo"></a> Continual Learning by Using Information of Each Class Holistically(**AAAI, 2021**) [[paper](https://www.cs.uic.edu/~liub/publications/AAAI2021_PCL.pdf)] 
+- <a name="todo"></a> Gradient Regularized Contrastive Learning for Continual Domain Adaptation(**AAAI, 2021**) [[paper](https://arxiv.org/abs/2007.12942)] 
+- <a name="todo"></a> Unsupervised Model Adaptation for Continual Semantic Segmentation(**AAAI, 2021**) [[paper](https://arxiv.org/abs/2009.12518)] 
+- <a name="todo"></a> A Continual Learning Framework for Uncertainty-Aware Interactive Image Segmentation(**AAAI, 2021**) [[paper](https://www.aaai.org/AAAI21Papers/AAAI-2989.ZhengE.pdf)] 
+- <a name="todo"></a> Do Not Forget to Attend to Uncertainty While Mitigating Catastrophic Forgetting(**WACV, 2021**) [[paper](https://openaccess.thecvf.com/content/WACV2021/html/Kurmi_Do_Not_Forget_to_Attend_to_Uncertainty_While_Mitigating_Catastrophic_WACV_2021_paper.html)] 
 - <a name="todo"></a> Online Class-Incremental Continual Learning with Adversarial Shapley Value(**AAAI, 2021**) [[paper](https://arxiv.org/abs/2009.00093)] [[code](https://github.com/RaptorMai/online-continual-learning)]
 
     online的setting下，每次训练新的batch时，会从memory里选取一小部分进行合并，然后一起训练。选取的规则通过KNN的Shapley Value来确定，有一定道理，
 
 ### 2020
+- <a name="todo"></a> Continual Learning for Natural Language Generation in Task-oriented Dialog Systems(**EMNLP, 2020**) [[paper](https://arxiv.org/abs/2010.00910)] 
+- <a name="todo"></a> Distill and Replay for Continual Language Learning(**COLING, 2020**) [[paper](https://www.aclweb.org/anthology/2020.coling-main.318.pdf)] 
+- <a name="todo"></a> Continual Learning of a Mixed Sequence of Similar and Dissimilar Tasks (**NeurIPS2020**) [[paper](https://proceedings.neurips.cc/paper/2020/file/d7488039246a405baf6a7cbc3613a56f-Paper.pdf)] [[code](https://github.com/ZixuanKe/CAT)]
 - <a name="todo"></a> Calibrating CNNs for Lifelong Learning (**NeurIPS2020**) [[paper](http://people.ee.duke.edu/~lcarin/Final_Calibration_Incremental_Learning_NeurIPS_2020.pdf)] 
 
     训练完第一个任务后，固定CNN，对于每个新任务，CNN的每一层后面都接一个调整层，调整层的输出再作为CNN下一层的输入。
