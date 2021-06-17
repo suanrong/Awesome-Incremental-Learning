@@ -11,6 +11,9 @@
 ### 2021
 - <a name="todo"></a> Adapting BERT for Continual Learning of a Sequence of Aspect Sentiment Classification Tasks (**NAACL, 2021**) [[paper](https://www.aclweb.org/anthology/2021.naacl-main.378.pdf)]
 - <a name="todo"></a> Continual Learning for Text Classification with Information Disentanglement Based Regularization (**NAACL, 2021**) [[paper](https://www.aclweb.org/anthology/2021.naacl-main.218.pdf)]
+
+    论文认为需要分开处理task-shared的task-specific的feature。分离这两个特征的方法是增加了两个辅助任务（预测task-id，预测两句话是顺序还是逆序），这两个都是用了交叉熵。论文还用了replay和正则化(两个feature分别有自己的正则化)。
+
 - <a name="todo"></a> Layerwise Optimization by Gradient Decomposition for Continual Learning (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2105.07561)] 
 - <a name="todo"></a> Adaptive Aggregation Networks for Class-Incremental Learning (**CVPR, 2021**) [[paper](https://arxiv.org/pdf/2010.05063.pdf)] 
 - <a name="todo"></a> Incremental Few-Shot Instance Segmentation (**CVPR, 2021**) [[paper](https://arxiv.org/abs/2105.05312)] 
