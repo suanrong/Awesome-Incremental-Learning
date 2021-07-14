@@ -22,7 +22,10 @@
 - <a name="todo"></a> ORDisCo: Effective and Efficient Usage of Incremental Unlabeled Data for Semi-supervised Continual Learning (**CVPR, 2021**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_ORDisCo_Effective_and_Efficient_Usage_of_Incremental_Unlabeled_Data_for_CVPR_2021_paper.pdf)] 
 - <a name="todo"></a> Incremental Learning via Rate Reduction (**CVPR, 2021**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Wu_Incremental_Learning_via_Rate_Reduction_CVPR_2021_paper.pdf)] 
 - <a name="todo"></a> IIRC: Incremental Implicitly-Refined Classification (**CVPR, 2021**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Abdelsalam_IIRC_Incremental_Implicitly-Refined_Classification_CVPR_2021_paper.pdf)] 
-- <a name="todo"></a> Continual Adaptation of Visual Representations via Domain Randomization and Meta-learning (**CVPR, 2021**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Volpi_Continual_Adaptation_of_Visual_Representations_via_Domain_Randomization_and_Meta-Learning_CVPR_2021_paper.pdf)] 
+- <a name="todo"></a> Continual Adaptation of Visual Representations via Domain Randomization and Meta-learning (**CVPR, 2021**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Volpi_Continual_Adaptation_of_Visual_Representations_via_Domain_Randomization_and_Meta-Learning_CVPR_2021_paper.pdf)]
+
+    在学习当前任务时，如果能同时学一些meta-domain的任务，那么可能未来在对新domain作adaptation的时候会比较简单，遗忘也会较轻，这是因为meta-domain有可能离未来的domain很近。meta-domain是用random的image transform实现的。论文本质还是在解决domain-incremental的问题
+
 - <a name="todo"></a> Image De-raining via Continual Learning (**CVPR, 2021**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhou_Image_De-Raining_via_Continual_Learning_CVPR_2021_paper.pdf)] 
 - <a name="todo"></a> Continual Learning via Bit-Level Information Preserving (**CVPR, 2021**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Shi_Continual_Learning_via_Bit-Level_Information_Preserving_CVPR_2021_paper.pdf)] 
 - <a name="todo"></a> Hyper-LifelongGAN: Scalable Lifelong Learning for Image Conditioned Generation (**CVPR, 2021**) [[paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhai_Hyper-LifelongGAN_Scalable_Lifelong_Learning_for_Image_Conditioned_Generation_CVPR_2021_paper.pdf)] 
